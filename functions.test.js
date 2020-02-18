@@ -15,3 +15,6 @@ test("Subtracting 2 - 2 equals 0",()=>{
 test("Subtracting 2 - 2 not equals -5",()=>{
     expect(functions.sub(2,2)).not.toBe(-5);
 })
+test("Checking values if they are false",()=>{
+    expect(functions.check_value(undefined)).toBeFalsy();
+})
