@@ -21,3 +21,9 @@ test("Checking values if they are false",()=>{
 test("Checking object",()=>{
     expect(functions.create_user()).toEqual({first_name: "Muhammad Naufil",last_name: "Ahmad"})
 })
+test("Sum of 500+ 500 should be less than 1200",()=>{
+    expect(500+500).toBeLessThan(1200);
+})
+test("Sum of 500+ 500 should be less than 1200",()=>{
+    expect(functions.add(3,4)).toBeGreaterThan(3);
+})
