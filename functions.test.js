@@ -24,6 +24,10 @@ test("Checking object",()=>{
 test("Sum of 500+ 500 should be less than 1200",()=>{
     expect(500+500).toBeLessThan(1200);
 })
-test("Sum of 500+ 500 should be less than 1200",()=>{
+test("Sum of 3+4 should be greater than 3",()=>{
     expect(functions.add(3,4)).toBeGreaterThan(3);
+})
+test("Admin should be in usernames",()=>{
+    const usernames=["ahmad","ramish","admin","naufil"]
+    expect(usernames).toContain("admin");
 })
