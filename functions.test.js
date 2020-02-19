@@ -18,3 +18,6 @@ test("Subtracting 2 - 2 not equals -5",()=>{
 test("Checking values if they are false",()=>{
     expect(functions.check_value(undefined)).toBeFalsy();
 })
+test("Checking object",()=>{
+    expect(functions.create_user()).toEqual({first_name: "Muhammad Naufil",last_name: "Ahmad"})
+})
